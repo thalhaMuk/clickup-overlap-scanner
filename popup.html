@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ClickUp Overlap Scanner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup__header">
+        <h1 class="popup__title">ClickUp Overlap Scanner</h1>
+        <p class="popup__subtitle">Scan loaded timesheet rows for overlapping time ranges.</p>
+      </header>
+
+      <section class="popup__panel">
+        <button class="button button--primary" id="scanButton" type="button">Scan for Overlaps</button>
+        <button class="button button--ghost" id="clearButton" type="button">Clear Highlights</button>
+      </section>
+
+      <section class="status status--info" id="status">
+        Open your ClickUp Timesheet tab, load all entries, then run scan.
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

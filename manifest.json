@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ClickUp Overlap Scanner",
+  "version": "1.0.0",
+  "description": "Scan ClickUp timesheet entries for overlapping time intervals.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "ClickUp Overlap Scanner",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.clickup.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
